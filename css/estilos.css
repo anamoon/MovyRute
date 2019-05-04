@@ -1,0 +1,481 @@
+*{
+	list-style: none;
+	border: none;
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+body{
+	overflow-x: hidden;
+}
+
+@font-face{
+	src: url(../fonts/Century Gothic.ttf);
+	font-family: "Century Gothic";
+}
+
+#fondo{
+	background: #52d8f7;
+	width: 100%;
+	height: 100vh;
+}
+.planeta img{
+	width: 40%;
+	height: 35%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.controles{
+	position: absolute;
+	display: flex;
+	flex-flow: column;
+	right: 0;
+	margin-top: 20%;
+	cursor: pointer;
+}
+
+.logo{
+	position: absolute;
+	top: 0;
+	padding: 30px;
+}
+.flecha{
+	margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	position: absolute;
+	cursor: pointer;
+	animation: animacionFlecha 2s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+.flecha2{
+	position: fixed;
+	right: 10px;
+
+}
+.triangulo{
+	margin-top: 5px;
+     width: 0;
+     height: 0;
+     border-right: 10px solid transparent;
+     border-top: 20px solid transparent;
+     border-left: 10px solid transparent;
+     border-bottom: 20px solid #ffffff;
+     display: none;
+     margin: -10px 0 0 15px;
+ }
+
+@keyframes animacionFlecha{
+	0%{
+		top: 85%;
+	}
+	50%{
+		top: 90%;
+	}
+	100%{
+		top: 85%;
+		
+	}
+}
+.menu1{
+	width: 100%;
+	min-height: 20px;
+	z-index: 9999;
+	bottom: 30px;
+	position: fixed;
+    animation: animacionMenu 2s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 0.5;
+	display: none;
+}
+.menu1 ul{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 -20px;
+}
+.menu1 li{
+	margin-right: calc(8% - 20px);
+	cursor: pointer;
+}
+.menu1 a{
+	color: white;
+	font-size: 1.5em;
+	position: absolute;
+	text-shadow: 1px 1px 10px gray;
+}
+.menu1 a:focus{
+	font-weight: bold;
+}
+
+@keyframes animacionMenu{
+	0%{
+		bottom: -20px;
+	}
+	50%{
+		bottom: 7%;
+		
+	}
+	100%{
+		bottom: 14%;
+		
+	}
+}
+.contenedores{
+	background: #4999c7;
+	width: 1100%;
+	height: 100vh;
+	position: relative;
+	z-index: 9;
+}
+.seccion{
+	width: 9.09%;
+	height: 100vh;
+	float: left;
+	border-right: 1px solid white;
+	box-sizing: border-box;
+}
+.uno{
+	background: url(..//img/fondoPagina1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.imagen{
+	width: 0%;
+	height: 5%;
+}
+.uno{
+	display: flex;
+	justify-content: center;
+	
+}
+.uno article{
+	margin: 5%;
+}
+.texto1{
+	padding-top: 6%;
+}
+.titulo{
+	text-align: right;
+	font-size: 2em;
+	font-family: Century Gothic;
+	padding-bottom: 4%;
+}
+.parrafo{
+	text-align: right;
+	font-family: Century Gothic;
+	font-size: 1em;
+
+}
+.dos{
+	background: url(..//img/ruta.png);
+}
+.videoUno{
+	text-align: center; 
+	font-size: 8em;
+	color: #ecf0f1;
+	padding-top: 18%;
+}
+.tres{
+	background: url(..//img/fondoPagina2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.audio{
+	position: absolute;	
+	margin-left: 2%;
+	margin-top: 30px;
+}
+.imagenFlorencia{
+	width: 209px;
+	height: 250px;
+	background: url(../img/animacion.png);
+	animation: animarBici steps(6) 0.8s infinite;
+}
+@keyframes animarBici{
+	100%{
+		background-position: -2100px top;
+
+	}
+}
+.imagenFlorencia{
+	position: absolute;	
+	margin-left: 3%;
+	margin-top: 1%;
+	height: 300px;
+}
+
+.container_info4 {
+  display: flex;
+  flex-flow: wrap;
+  margin: 20px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.cuatro{
+	background: url(..//img/fondoPagina1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.container_info4 .imagen {
+  flex-basis: 35%;
+  display: flex;
+}
+.container_info4 .imagen img {
+  width: 95%;
+  height: 85%;
+ margin-top: 10px;	
+}
+.modal {
+  max-width: 800px;
+  max-height: 500px;
+}
+.blocker{
+	z-index: 15 !important; 
+}
+.cont {
+  width: 100%;
+  display: flex;
+}
+.imgGran {
+  width: 50%;
+  overflow: hidden;
+  height: 470px;
+  margin-top: 15%;
+}
+.artCont {
+  width: 50%;
+  padding: 110px 20px;
+}
+.artCont h2 {
+  font-size: 2em;
+  color: #273c75;
+  text-align: center;
+  font-family: Century Gothic;
+}
+.artCont p {
+  margin-top: 20px;
+  font-size: 1em;
+  font-family: Century Gothic;
+}
+.linea1{
+	width: 5px; 
+	height: 95%;
+	background: #04f904;
+	margin-left: 280px;
+	margin-top: 20px
+}
+
+.cinco{
+	background: url(..//img/pista-2.png);
+}
+.videoUno{
+	text-align: center; 
+	font-size: 8em;
+	color: #ecf0f1;
+	padding-top: 18%;
+}
+.seis{
+	background: url(..//img/fondoPagina2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.container_info6 {
+  display: flex;
+  flex-flow: wrap;
+  margin: 20px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.container_info6 .imagen {
+  flex-basis: 35%;
+  display: flex;
+}
+.container_info6 .imagen img {
+  width: 95%;
+  height: 85%;
+ margin-top: 10px;	
+}
+.organizar{
+	display: flex;
+	justify-content: space-between;
+}
+
+.linea1{
+	width: 5px; 
+	height: 95%;
+	background: #04f904;
+	margin-left: 280px;
+	margin-top: 20px
+}
+.siete{
+	background: url(..//img/fondoPagina1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.container_info7 {
+  display: flex;
+  flex-flow: wrap;
+  margin: 20px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.container_info7 .imagen {
+  flex-basis: 35%;
+  display: flex;
+}
+.container_info7 .imagen img {
+  width: 95%;
+  height: 85%;
+ margin-top: 10px;	
+}
+.organizar{
+	display: flex;
+	justify-content: space-between;
+}
+
+.linea1{
+	width: 5px; 
+	height: 95%;
+	background: #04f904;
+	margin-left: 280px;
+	margin-top: 20px
+}
+.ocho{
+	background: url(..//img/montaña.png);
+}
+.nueve{
+	background: url(..//img/fondoPagina2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.container_info9 {
+  display: flex;
+  flex-flow: wrap;
+  margin: 20px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.container_info9 .imagen {
+  flex-basis: 35%;
+  display: flex;
+}
+.container_info9 .imagen img {
+  width: 95%;
+  height: 85%;
+ margin-top: 10px;	
+}
+.organizar{
+	display: flex;
+	justify-content: space-between;
+}
+
+.linea1{
+	width: 5px; 
+	height: 95%;
+	background: #04f904;
+	margin-left: 280px;
+	margin-top: 20px
+}
+.diez{
+	background: url(..//img/bmx.png);
+}
+.once{
+	background: url(..//img/fondoPagina1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.container_info11 {
+  display: flex;
+  flex-flow: wrap;
+  margin: 20px;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.container_info11 .imagen {
+  flex-basis: 35%;
+  display: flex;
+}
+.container_info11 .imagen img {
+  width: 95%;
+  height: 85%;
+ margin-top: 10px;	
+}
+.organizar{
+	display: flex;
+	justify-content: space-between;
+}
+
+.linea1{
+	width: 5px; 
+	height: 95%;
+	background: #04f904;
+	margin-left: 280px;
+	margin-top: 20px
+}
+.modal a.close-modal{
+	background-image:url(../img/x.png); 
+	background-color:#04f904;
+	border-radius: 100%;
+	border: 3px solid #04f904;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	color: white;
+}
+
+/*Contacto*/
+.fondoContacto{
+	background: url(..//img/fondoPagina1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.login{
+	margin-top: 9%;
+}
+.form-control{
+	border: 2px solid #00f400;
+}
+.form-control:focus{
+	border: 2px solid #00f400;
+}
+.loginb{
+	background: #00f400;
+	color: white;
+}
+.loginb:hover{
+	background: #00c900;
+	color: white;
+}
