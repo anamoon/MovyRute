@@ -59,7 +59,10 @@
 		});
 		$('.imagen').click(function(){
 			$(this).modal({fadeDuration: 150});
-		}) 	
+		})
+		$('.imagenJuego').click(function(){
+			$(this).modal();
+		}) 
 		
 });
 

@@ -4,6 +4,7 @@
 	margin:0;
 	padding: 0;
 	text-decoration: none;
+	box-sizing: border-box;
 }
 body{
 	overflow-x: hidden;
@@ -280,7 +281,12 @@ body{
 }
 
 .cinco{
-	background: url(..//img/pista-2.png);
+	
+
+}
+.videos{
+	width: 100%; 
+   height:100vh;  
 }
 .videoUno{
 	text-align: center; 
