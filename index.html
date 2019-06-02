@@ -4,43 +4,45 @@
 	<meta charset="UTF-8">
 	<title>Movy Rute</title>
 	<link rel="icon" href="img/logo.ico">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />-->
+	<link rel="stylesheet" href="css/jquery.modal.min.css">
 	<link rel="stylesheet"  href="css/estilos.css">
 </head>
 <body>
 	<div id="fondo">
-		<div class="trian"></div>
 
 		<div class="controles">
 			<img class="vi" src="img/video.png" alt="">		
 			<a href="#con" class="imagenJuego">
 		 		<img  src="img/control.png" alt="">
 		 	</a>
-		 	<div class="modal">
+		 	<!--<div class="modal">
 		 		<div class="cont">
 		 			<div class="imgGrande" id="con">
 		 				<img src="img/goplay.png" alt="">
 		 			</div>
 		 		</div>
-		 	</div>
+		 	</div>-->
 		</div>
+
 		<div class="planeta"><img  src="img/planeta.png" alt=""></div>
+		<div class="localizador"><img src="img/localizador.png" alt=""></div>
 		<div class="logo"><img  src="img/logo.png" alt=""></div>
 		<a href="#sec1" class="flecha"><img  src="img/flecha.png" href="#sec1" alt=""></a>
 	</div>
 		<nav class="menu1">
 					<ul>
-						<li class="boton1"><a href="#sec1">1839</a></li>
-						<li class="boton2"><a href="#sec2">1868</a></li>
-						<li class="boton3"><a href="#sec3">1870</a></li>
-						<li class="boton4"><a href="#sec4">1879</a></li>
-						<li class="boton5"><a href="#sec5">1883</a></li>
-						<li class="boton6"><a href="#sec6">1896</a></li>
-						<li class="boton7"><a href="#sec7">1903</a></li>
-						<li class="boton8"><a href="#sec8">1933</a></li>
-						<li class="boton9"><a href="#sec9">1948</a></li>
-						<li class="boton10"><a href="#sec10">1969</a></li>
-						<li class="boton11"><a href="#sec11">2017</a></li>
+						<li class="boton1"><a href="#sec1">1839</a><div class="triangulo"></div></li>
+						<li class="boton2"><a href="#sec2">1868</a><div class="triangulo"></div></li>
+						<li class="boton3"><a href="#sec3">1870</a><div class="triangulo"></div></li>
+						<li class="boton4"><a href="#sec4">1879</a><div class="triangulo"></div></li>
+						<li class="boton5"><a href="#sec5">1883</a><div class="triangulo"></div></li>
+						<li class="boton6"><a href="#sec6">1896</a><div class="triangulo"></div></li>
+						<li class="boton7"><a href="#sec7">1903</a><div class="triangulo"></div></li>
+						<li class="boton8"><a href="#sec8">1933</a><div class="triangulo"></div></li>
+						<li class="boton9"><a href="#sec9">1948</a><div class="triangulo"></div></li>
+						<li class="boton10"><a href="#sec10">1969</a><div class="triangulo"></div></li>
+						<li class="boton11"><a href="#sec11">2017</a><div class="triangulo"></div></li>
 					</ul>
 				<a href="#fondo"><img class="flecha2" src="img/flecha2.png" alt=""></a>
 		  </nav>
@@ -49,6 +51,12 @@
 		<div class="contenedores">
 
 			<section id="sec1" class="seccion uno">
+				<div class="nubes">
+					<img src="img/nube1.png" alt="" class="nube nube1">
+					<img src="img/nube2.png" alt="" class="nube nube2">
+					<img src="img/nube3.png" alt="" class="nube nube3">
+					<img src="img/nube4.png" alt="" class="nube nube4">
+				</div>
 				<article>
 					<div class="velocipedo"><img  src="img/velocipedo.png" alt=""></div>
 				</article>
@@ -61,7 +69,8 @@
 
 			<section id="sec2" class="seccion dos">
 				<article class="container_info2">
-					<div class="videoUno"> <i class="far fa-play-circle"></i>
+					<div>
+						<video id="sampleMovie" src="videos/ruta.mp4" controls class="videos"></video>
 					</div>
 				</article>
 			</section>
@@ -69,6 +78,12 @@
 
 
 			<section id="sec3" class="seccion tres">
+				<div class="nubes">
+					<img src="img/nube1.png" alt="" class="nube nube1">
+					<img src="img/nube2.png" alt="" class="nube nube2">
+					<img src="img/nube3.png" alt="" class="nube nube3">
+					<img src="img/nube4.png" alt="" class="nube nube4">
+				</div>
 				<article class="container_info3">
 					<div class="audio"><img src="img/audio.png" alt=""></div>
 					<div class="imagenFlorencia"></div>
@@ -77,7 +92,14 @@
 
 
 			<section id="sec4" class="seccion cuatro">
+				
 				<div class="organizar">
+					<div class="nubesDos">
+						<img src="img/nube1.png" alt="" class="nube2 nube1">
+						<img src="img/nube2.png" alt="" class="nube2 nube2">
+						<img src="img/nube3.png" alt="" class="nube2 nube3">
+						<img src="img/nube4.png" alt="" class="nube2 nube4">
+					</div>
 					<article>
 					<div class="linea1"></div>
 					</article>
@@ -159,6 +181,12 @@
 				</section>
 
 				<section id="sec6" class="seccion seis">
+					<div class="nubes">
+						<img src="img/nube1.png" alt="" class="nube nube1">
+						<img src="img/nube2.png" alt="" class="nube nube2">
+						<img src="img/nube3.png" alt="" class="nube nube3">
+						<img src="img/nube4.png" alt="" class="nube nube4">
+					</div>
 					<div class="organizar">
 						<article>
 						<div class="linea1"></div>
@@ -232,6 +260,12 @@
 
 
 				<section id="sec7" class="seccion siete">
+					<div class="nubes">
+						<img src="img/nube1.png" alt="" class="nube nube1">
+						<img src="img/nube2.png" alt="" class="nube nube2">
+						<img src="img/nube3.png" alt="" class="nube nube3">
+						<img src="img/nube4.png" alt="" class="nube nube4">
+					</div>
 					<div class="organizar">
 						<article>
 						<div class="linea1"></div>
@@ -318,6 +352,12 @@
 				
 
 				<section id="sec9" class="seccion nueve">
+					<div class="nubes">
+						<img src="img/nube1.png" alt="" class="nube nube1">
+						<img src="img/nube2.png" alt="" class="nube nube2">
+						<img src="img/nube3.png" alt="" class="nube nube3">
+						<img src="img/nube4.png" alt="" class="nube nube4">
+					</div>
 					<div class="organizar">
 						<article>
 						<div class="linea1"></div>
@@ -406,6 +446,13 @@
 
 
 				<section id="sec11" class="seccion once">
+					<div class="nubes">
+						<img src="img/nube1.png" alt="" class="nube nube1">
+						<img src="img/nube2.png" alt="" class="nube nube2">
+						<img src="img/nube3.png" alt="" class="nube nube3">
+						<img src="img/nube4.png" alt="" class="nube nube4">
+					</div>
+					
 				<div class="organizar">
 					<article>
 					<div class="linea1"></div>
@@ -480,7 +527,7 @@
 		</div>		
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="js/jquery.modal.min.js"></script>
 	<script src="js/codigo.js"></script>
 </body>
 </html>

@@ -21,11 +21,20 @@ body{
 	height: 100vh;
 }
 .planeta img{
-	width: 40%;
+	width: 55%;
 	height: 35%;
 	display: block;
 	margin: 0 auto;
 	padding-top: 25px;
+
+}
+
+.localizador{
+	width:10%;
+	height:5%;
+	display:block;	
+	margin:0 auto;
+	
 }
 .controles{
 	position: absolute;
@@ -61,15 +70,19 @@ body{
 
 }
 .triangulo{
-	margin-top: 5px;
      width: 0;
      height: 0;
      border-right: 10px solid transparent;
      border-top: 20px solid transparent;
      border-left: 10px solid transparent;
-     border-bottom: 20px solid #ffffff;
+     border-bottom: 20px solid #ffff;
      display: none;
-     margin: -10px 0 0 15px;
+     justify-content: center;
+ }
+ .activo{
+ 	display: block;
+ 	margin-top: 10px;
+
  }
 
 @keyframes animacionFlecha{
@@ -129,7 +142,7 @@ body{
 	}
 }
 .contenedores{
-	background: #4999c7;
+	background: #52d8f7;
 	width: 1100%;
 	height: 100vh;
 	position: relative;
@@ -141,12 +154,81 @@ body{
 	float: left;
 	border-right: 1px solid white;
 	box-sizing: border-box;
+	position: relative;
 }
 .uno{
-	background: url(..//img/fondoPagina1.jpg);
+	background: url(..//img/fondo1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
+}
+.nubes{
+	width: 100%;
+	height: 50vh;
+	position: absolute;
+	top: 0px;
+}
+
+.nube{
+	position: absolute;
+	top: 20px;
+	left:-500px;
+	animation: nubes 40s infinite;
+}
+
+
+.nube1{
+	animation-delay: 5s;
+	animation-timing-function: 25s;
+	top: 5px;
+}
+
+.nube2{
+	animation-delay: 25s;
+	animation-timing-function: 40s;
+	top: 10px;
+}
+.nube3{
+	animation-delay: 70s;
+	animation-timing-function: 60s;
+	top: 80px;
+}
+.nube4{
+	animation-delay: 85s;
+	animation-timing-function: 10s;
+	top: 70px;
+}
+@keyframes nubes{
+	100%{
+		left: 1000px;
+
+	}
+	
+}
+
+
+
+//NUBE 2
+.nubesDos{
+	width: 100%;
+	height: 50vh;
+	position: absolute;
+	top: 0px;
+}
+
+.nube2{
+	position: absolute;
+	top: 20px;
+	left: -500px;
+	animation: nubesDos 40s infinite;
+}
+
+@keyframes nubesDos{
+	100%{
+		left: 1000px;
+
+	}
+	
 }
 
 .imagen{
@@ -177,7 +259,7 @@ body{
 
 }
 .dos{
-	background: url(..//img/ruta.png);
+	z-index: 10 ;
 }
 .videoUno{
 	text-align: center; 
@@ -186,7 +268,7 @@ body{
 	padding-top: 18%;
 }
 .tres{
-	background: url(..//img/fondoPagina2.jpg);
+	background: url(..//img/fondo3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -197,23 +279,24 @@ body{
 	margin-top: 30px;
 }
 .imagenFlorencia{
-	width: 209px;
-	height: 250px;
-	background: url(../img/animacion.png);
-	animation: animarBici steps(6) 0.8s infinite;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	margin-left: 40%;
+	margin-top: 120px;
+	width: 219px;
+	height: 550px;
+	background: url(../img/tiraAnimacion2.png);
+	background-position: left top;
+	animation: animarBici steps(6) 0.5s infinite;
 }
 @keyframes animarBici{
 	100%{
-		background-position: -2100px top;
+		background-position: -1300px top;
 
 	}
 }
-.imagenFlorencia{
-	position: absolute;	
-	margin-left: 3%;
-	margin-top: 1%;
-	height: 300px;
-}
+
 
 .container_info4 {
   display: flex;
@@ -224,11 +307,13 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+  
 }
 .cuatro{
-	background: url(..//img/fondoPagina1.jpg);
+	background: url(..//img/fondo2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	
 
 }
 .container_info4 .imagen {
@@ -281,8 +366,8 @@ body{
 }
 
 .cinco{
+	z-index: 10;
 	
-
 }
 .videos{
 	width: 100%; 
@@ -295,7 +380,7 @@ body{
 	padding-top: 18%;
 }
 .seis{
-	background: url(..//img/fondoPagina2.jpg);
+	background: url(..//img/fondo4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -309,6 +394,7 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+ 
 }
 
 .container_info6 .imagen {
@@ -333,7 +419,7 @@ body{
 	margin-top: 20px
 }
 .siete{
-	background: url(..//img/fondoPagina1.jpg);
+	background: url(..//img/fondo3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -372,9 +458,10 @@ body{
 }
 .ocho{
 	background: url(..//img/montaña.png);
+	z-index: 10;
 }
 .nueve{
-	background: url(..//img/fondoPagina2.jpg);
+	background: url(..//img/fondo4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
@@ -411,10 +498,10 @@ body{
 	margin-top: 20px
 }
 .diez{
-	background: url(..//img/bmx.png);
+	z-index: 10;
 }
 .once{
-	background: url(..//img/fondoPagina1.jpg);
+	background: url(..//img/fondo2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 
