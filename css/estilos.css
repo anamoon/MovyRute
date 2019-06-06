@@ -20,30 +20,160 @@ body{
 	width: 100%;
 	height: 100vh;
 }
+.planeta{
+	position: relative;
+    width: 55%;
+    margin: 0 auto;
+    overflow: auto;
+  
+}
+
 .planeta img{
-	width: 55%;
-	height: 35%;
+	width: 100%;
 	display: block;
 	margin: 0 auto;
 	padding-top: 25px;
-
+	position: relative;
+	margin-top: 16px;
 }
 
-.localizador{
-	width:10%;
-	height:5%;
-	display:block;	
-	margin:0 auto;
-	
+.sombra{
+	width: 488px;
+	height: 488px;
+	box-shadow: 0px 0px 20px 1px black;
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 244px);
+	border-radius: 50%;
+	animation: sombra 1s linear infinite;
+}
+@keyframes sombra{
+	0%{
+		box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.7);
+	}
+	50%{
+		box-shadow: 10px 10px 95px 1px #3742fa;
+	}
+	100%{
+		box-shadow: 10px 10px 10px 1px #3742fa;
+	}
+}
+
+.indicador{
+	position: absolute !important;
+	top: 0px;
+	left: 0px;
+	width: 80px !important;
+	animation: indica 3s infinite;
+}
+@keyframes indica{
+	100%{
+		width: 90px;
+	}
+	90%{
+		width: 80px;
+	}
+}
+.ind1{
+	left: 23%;
+	top: 295px;
+	animation-delay: 3s;
+	animation: indUno 6s infinite;
+}
+@keyframes indUno{
+	100%{
+		top: 285px;
+	}
+	90%{
+		top: 295px;
+	}
+}
+.ind2{
+	left: 21%;
+	top: 210px;
+	animation-delay: 9s;
+	animation: indDos 12s infinite;
+}
+@keyframes indDos{
+	100%{
+		top: 200px;
+	}
+	90%{
+		top: 210px;
+	}
+}
+.ind3{
+	left: 17%;
+	top: 214px;
+	animation-delay: 6s;
+	animation: indTres 16s infinite;
+}
+@keyframes indTres{
+	100%{
+		top: 204px;
+	}
+	90%{
+		top: 214px;
+	}
+}
+.ind4{
+	left: 38%;
+	top: 172px;
+	animation-delay: 11s;
+	animation: indCuatro 14s infinite;
+}
+@keyframes indCuatro{
+	100%{
+		top: 162px;
+	}
+	90%{
+		top: 172px;
+	}
+}
+.ind5{
+	left: 42%;
+	top: 150px;
+	animation-delay: 15s;
+	animation: indCinco 9s infinite;
+}
+@keyframes indCinco{
+	100%{
+		top: 140px;
+	}
+	90%{
+		top: 150px;
+	}
+}
+.ind6{
+	left: 39%;
+	top: 134px;
+	animation-delay: 17s;
+	animation: indSeis 4s infinite;
+}
+@keyframes indSeis{
+	100%{
+		top: 124px;
+	}
+	90%{
+		top: 134px;
+	}
 }
 .controles{
 	position: absolute;
 	display: flex;
 	flex-flow: column;
 	right: 0;
-	margin-top: 20%;
+	margin-top: 18%;
 	cursor: pointer;
 }
+.control{
+	padding-top: 20px;
+}
+
+.control:hover{
+	transform: rotate(8deg);
+}
+
 
 .logo{
 	position: absolute;
@@ -67,6 +197,7 @@ body{
 .flecha2{
 	position: fixed;
 	right: 10px;
+	
 
 }
 .triangulo{
@@ -87,13 +218,13 @@ body{
 
 @keyframes animacionFlecha{
 	0%{
-		top: 85%;
+		top: 84%;
 	}
 	50%{
-		top: 90%;
+		top: 86%;
 	}
 	100%{
-		top: 85%;
+		top: 84%;
 		
 	}
 }
@@ -275,26 +406,30 @@ body{
 }
 .audio{
 	position: absolute;	
-	margin-left: 2%;
+	margin-left: 40%;
 	margin-top: 30px;
 }
 .imagenFlorencia{
 	position: absolute;
-	display: flex;
-	justify-content: center;
-	margin-left: 40%;
+	margin-left: 20%;
 	margin-top: 120px;
 	width: 219px;
 	height: 550px;
-	background: url(../img/tiraAnimacion2.png);
+	background: url(../img/tiraAnimacion.png);
 	background-position: left top;
-	animation: animarBici steps(6) 0.5s infinite;
+	animation: animarBici steps(6) 1s infinite;
 }
 @keyframes animarBici{
 	100%{
 		background-position: -1300px top;
-
 	}
+	
+	60%{
+		margin-left: 70%;
+		animation-direction: alternate;
+		/*animation-duration: 3s;*/
+	}
+
 }
 
 
@@ -329,6 +464,7 @@ body{
   max-width: 800px;
   max-height: 500px;
 }
+
 .blocker{
 	z-index: 15 !important; 
 }
@@ -373,6 +509,12 @@ body{
 	width: 100%; 
    height:100vh;  
 }
+
+.videoModal{
+	height: 430px;
+	width: 100%;
+}
+
 .videoUno{
 	text-align: center; 
 	font-size: 8em;
@@ -547,6 +689,33 @@ body{
 	height: 30px;
 	position: absolute;
 	color: white;
+}
+
+/*REALIDAD AUMENTADA*/
+
+.imagenra{
+	margin: 0 auto;
+	display: flex;
+
+}
+.volver{
+	background: #04f904;
+	border-radius: 5px;
+	width: 80px;
+	height: 40px;
+	margin: 25px;
+}
+.volver:hover{
+	background: #08e008;
+}
+.boton{
+	display: flex;
+	justify-content: flex-end;
+}
+.volver a{
+	color: #ffff;
+	font-size: 1.2em;
+	font-family: Century Gothic;
 }
 
 /*Contacto*/

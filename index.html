@@ -12,8 +12,19 @@
 	<div id="fondo">
 
 		<div class="controles">
-			<img class="vi" src="img/video.png" alt="">		
-			<a href="#con" class="imagenJuego">
+			<a href="#video" class="principal control">
+				<img class="vi" src="img/video.png" alt="">
+				
+			</a>
+			<div class="modal">
+				<div class="cont">
+					<div class="videoPrincipal" id="video">
+						<video id="sampleMovie" src="videos/principal.mp4" controls class="videoModal"></video>
+					</div>
+				</div>
+			</div>
+				
+			<a href="#con" class="imagenJuego control">
 		 		<img  src="img/control.png" alt="">
 		 	</a>
 		 	<!--<div class="modal">
@@ -23,10 +34,20 @@
 		 			</div>
 		 		</div>
 		 	</div>-->
+		 	<a href="ra.html" class="imagenRA control">
+		 		<img  src="img/raa.png" alt="">
+		 	</a>
 		</div>
-
-		<div class="planeta"><img  src="img/planeta.png" alt=""></div>
-		<div class="localizador"><img src="img/localizador.png" alt=""></div>
+		<div class="sombra"></div>
+		<div class="planeta">
+			<img  src="img/planeta.png" alt="">
+			<img  src="img/localizador.png"  class="indicador ind1" href="" alt="">
+				<img  src="img/localizador.png"  class="indicador ind2" href="" alt="">
+				<img  src="img/localizador.png"  class="indicador ind3" href="" alt="">
+				<img  src="img/localizador.png"  class="indicador ind4" href="" alt="">
+				<img  src="img/localizador.png"  class="indicador ind5" href="" alt="">
+				<img  src="img/localizador.png"  class="indicador ind6" href="" alt="">
+		</div>
 		<div class="logo"><img  src="img/logo.png" alt=""></div>
 		<a href="#sec1" class="flecha"><img  src="img/flecha.png" href="#sec1" alt=""></a>
 	</div>
@@ -85,7 +106,7 @@
 					<img src="img/nube4.png" alt="" class="nube nube4">
 				</div>
 				<article class="container_info3">
-					<div class="audio"><img src="img/audio.png" alt=""></div>
+					<div class="audio"><audio src="audio/florencia.mp3" controls></audio></div>
 					<div class="imagenFlorencia"></div>
 				</article>
 			</section>
@@ -343,7 +364,8 @@
 
 				<section id="sec8" class="seccion ocho">
 					<article class="container_info8">
-						<div class="videoUno"> <i class="far fa-play-circle"></i>
+						<div>
+							<video id="sampleMovie" src="videos/montana.mp4" controls class="videos"></video>
 						</div>
 					</article>
 				</section>

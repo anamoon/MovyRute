@@ -136,6 +136,10 @@
 		$('.imagenJuego').click(function(){
 			$(this).modal();
 		}) 
+		$('.principal').click(function(){
+			$(this).modal()
+		})
+		
 		
 });
 
