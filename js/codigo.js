@@ -31,7 +31,7 @@
 
 				$('.triangulo').removeClass('activo');
 				$('.boton2 .triangulo').addClass('activo');
-				console.log("Mateo")
+				
 			}else {
 				$('.triangulo').removeClass('activo');
 				$('.boton1 .triangulo').addClass('activo');
@@ -139,7 +139,198 @@
 		$('.principal').click(function(){
 			$(this).modal()
 		})
-		
+
+
+		var miAnimacion = document.getElementById("ruta");
+
+
+		$('.boton2').click(function(){
+			miAnimacion.play();
+		})
+		$('.pausar').click(function(){
+			miAnimacion.pause();	
+		})
+		$('.boton1').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton3').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton4').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton5').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton6').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton7').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton8').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton9').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton10').click(function(){
+			miAnimacion.pause();
+		})
+		$('.boton11').click(function(){
+			miAnimacion.pause();
+		})
+		$('.continuar').click(function(){
+			miAnimacion.play();
+		})
+
+
+
+
+
+		var miAnimacionDos = document.getElementById("pista");
+		$('.boton5').click(function(){
+			miAnimacionDos.play();
+		})
+		$('.pausar_dos').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton1').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton2').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton3').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton4').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton6').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton7').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton8').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton9').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton10').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.boton11').click(function(){
+			miAnimacionDos.pause();
+		})
+		$('.continuar_dos').click(function(){
+			miAnimacionDos.play();
+		})
+
+
+		var miAnimacionTres = document.getElementById("montana");
+		$('.boton8').click(function(){
+			miAnimacionTres.play();
+		})
+		$('.pausar_tres').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton1').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton2').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton3').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton4').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton5').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton6').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton7').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton9').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton10').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.boton11').click(function(){
+			miAnimacionTres.pause();
+		})
+		$('.continuar_tres').click(function(){
+			miAnimacionTres.play();
+		})
+
+
+		var miAnimacionCuatro = document.getElementById("bmx");
+		$('.boton10').click(function(){
+			miAnimacionCuatro.play();
+		})
+		$('.pausar_cuatro').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton1').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton2').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton3').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton4').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton5').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton6').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton7').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton8').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton9').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.boton11').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.continuar_cuatro').click(function(){
+			miAnimacionCuatro.play();
+		})
+		/*function play(){
+			if(miAnimacion.paused){
+				miAnimacion.play();
+			}
+			else{
+				miAnimacion.pause();
+			}
+		}*/
+
+		/*$(.boton2).on('click', function(){
+			if (miAnimacion.paused) {
+				miAnimacion.play();
+
+			}
+			else{
+				miAnimacion.pause();
+			}
+		})	*/	
 		
 });
+
 
