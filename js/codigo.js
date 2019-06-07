@@ -180,6 +180,9 @@
 		$('.boton11').click(function(){
 			miAnimacion.pause();
 		})
+		$('.flecha2').click(function(){
+			miAnimacion.pause();
+		})
 		$('.continuar').click(function(){
 			miAnimacion.play();
 		})
@@ -225,6 +228,9 @@
 		$('.boton11').click(function(){
 			miAnimacionDos.pause();
 		})
+		$('.flecha2').click(function(){
+			miAnimacionDos.pause();
+		})
 		$('.continuar_dos').click(function(){
 			miAnimacionDos.play();
 		})
@@ -267,6 +273,9 @@
 		$('.boton11').click(function(){
 			miAnimacionTres.pause();
 		})
+		$('.flecha2').click(function(){
+			miAnimacionTres.pause();
+		})
 		$('.continuar_tres').click(function(){
 			miAnimacionTres.play();
 		})
@@ -307,6 +316,9 @@
 			miAnimacionCuatro.pause();
 		})
 		$('.boton11').click(function(){
+			miAnimacionCuatro.pause();
+		})
+		$('.flecha2').click(function(){
 			miAnimacionCuatro.pause();
 		})
 		$('.continuar_cuatro').click(function(){

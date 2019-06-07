@@ -534,7 +534,7 @@ body{
   	z-index: 999;
 }
 .continuar{
-	background-image:url(..//img/play2.png);
+	background-image:url(..//img/play.png);
  	background-repeat:no-repeat;
   	height:100px;
   	width:100px;
@@ -554,7 +554,7 @@ body{
   	z-index: 999;
 }
 .continuar_dos{
-	background-image:url(..//img/play2.png);
+	background-image:url(..//img/play.png);
  	background-repeat:no-repeat;
   	height:100px;
   	width:100px;
@@ -574,7 +574,7 @@ body{
   	z-index: 999;
 }
 .continuar_tres{
-	background-image:url(..//img/play2.png);
+	background-image:url(..//img/play.png);
  	background-repeat:no-repeat;
   	height:100px;
   	width:100px;
@@ -594,7 +594,7 @@ body{
   	z-index: 999;
 }
 .continuar_cuatro{
-	background-image:url(..//img/play2.png);
+	background-image:url(..//img/play.png);
  	background-repeat:no-repeat;
   	height:100px;
   	width:100px;
