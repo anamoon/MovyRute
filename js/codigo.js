@@ -1,4 +1,9 @@
 	$(document).ready(function(){
+
+		$('body, html').animate({
+				scrollTop:'0px',
+				scrollLeft:'0px'
+			},1500,'easeInOutQuart');
 		
 		var secciones={
 			uno: $('#sec1').offset().left,
@@ -117,6 +122,10 @@
 				scrollTop:'0px'
 			},1500,'easeInOutQuart');
 		});
+
+
+
+
 		var altoCaja = $('.uno').offset().top
 		$(window).on('scroll',function(){
 			if ($(window).scrollTop() > altoCaja-100) {
@@ -124,12 +133,15 @@
 				$("body").css('overflow','scroll');
 				$("body").css('overflow-y','hidden');
 				
+				
 
 			}else{
 				$('.menu1').css('display','none');
 				$("body").css('overflow-x','hidden');
 			}
 		});
+
+
 		$('.imagen').click(function(){
 			$(this).modal({fadeDuration: 150});
 		})

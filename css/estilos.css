@@ -304,20 +304,20 @@ body{
 	position: absolute;
 	top: 20px;
 	left:-500px;
-	animation: nubes 40s infinite;
+	animation: nubes 30s infinite;
 }
 
 
 .nube1{
 	animation-delay: 5s;
 	animation-timing-function: 25s;
-	top: 5px;
+	top: 10px;
 }
 
 .nube2{
 	animation-delay: 25s;
 	animation-timing-function: 40s;
-	top: 10px;
+	top: 15px;
 }
 .nube3{
 	animation-delay: 70s;
@@ -417,7 +417,7 @@ body{
 	height: 550px;
 	background: url(../img/tiraAnimacion.png);
 	background-position: left top;
-	animation: animarBici steps(6) 4s infinite;
+	animation: animarBici ease-in-out 4s infinite;
 	transition-duration: 5s;
 }
 @keyframes animarBici{
@@ -428,7 +428,7 @@ body{
 		transform: rotateY( 0deg );
 	}
 	50%{
-		background-position: -1300px top;
+		/*background-position: -1300px top;*/
 		margin-left: 70%;
 		transform: rotateY( 180deg );
 	}
@@ -437,7 +437,7 @@ body{
 	}
 
 	100%{
-		background-position: -1300px top;
+		/*background-position: -1300px top;*/
 		margin-left: 0%;
 		transform: rotateY( 0deg );
 		
@@ -512,7 +512,7 @@ body{
 	height: 95%;
 	background: #04f904;
 	margin-left: 280px;
-	margin-top: 20px
+	margin-top: 20px;
 }
 
 .cinco{
