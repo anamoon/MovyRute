@@ -340,6 +340,15 @@
 		$('.continuar_cuatro').click(function(){
 			miAnimacionCuatro.play();
 		})
+
+
+		/*var animacionPrincipal = document.getElementById("principal");
+		$('.vi').click(function(){
+			animacionPrincipal.play();
+		})
+		$('.a.close-modal').click(function(){
+			animacionPrincipal.pause();
+		})*/
 		/*function play(){
 			if(miAnimacion.paused){
 				miAnimacion.play();

@@ -834,6 +834,11 @@ body{
 	font-size: 1.2em;
 	font-family: Century Gothic;
 }
+.parrafoRA{
+	font-family: Century Gothic;
+	text-align: center;
+	margin-bottom: 15px;
+}
 /*Contacto*/
 .fondoContacto{
 	background: url(..//img/fondoPagina1.jpg);
