@@ -809,6 +809,17 @@ body{
 .volver:hover{
 	background: #08e008;
 }
+.apk{
+	background: #04f904;
+	border-radius: 5px;
+	width:120px;
+	height: 40px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+.apk:hover{
+	background: #08e008;
+}
 .boton{
 	display: flex;
 	justify-content: flex-end;
@@ -818,7 +829,11 @@ body{
 	font-size: 1.2em;
 	font-family: Century Gothic;
 }
-
+.apk a{
+	color: #ffff;
+	font-size: 1.2em;
+	font-family: Century Gothic;
+}
 /*Contacto*/
 .fondoContacto{
 	background: url(..//img/fondoPagina1.jpg);
