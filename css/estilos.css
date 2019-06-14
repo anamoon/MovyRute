@@ -213,6 +213,7 @@ body{
  .activo{
  	display: block;
  	margin-top: 10px;
+ 	margin-left: 15px;
 
  }
 
@@ -298,6 +299,8 @@ body{
 	height: 50vh;
 	position: absolute;
 	top: 0px;
+
+
 }
 
 .nube{
@@ -325,7 +328,7 @@ body{
 	top: 80px;
 }
 .nube4{
-	animation-delay: 85s;
+	animation-delay: 90s;
 	animation-timing-function: 10s;
 	top: 70px;
 }
@@ -374,9 +377,12 @@ body{
 .uno article{
 	margin: 5%;
 }
+
 .texto1{
 	padding-top: 6%;
+	z-index: 10;
 }
+
 .titulo{
 	text-align: right;
 	font-size: 2em;
@@ -456,6 +462,8 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+  justify-content: center;
+  z-index: 10;
   
 }
 .cuatro{
@@ -465,22 +473,50 @@ body{
 	
 
 }
+.mano{
+	position: absolute;
+	animation: animacionMano 2s ease-in-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	margin-left: -90px;
+	width: 20%;
+
+}
+@keyframes animacionMano{
+	0%{
+		top: 5%;
+		width: 20%;
+	}
+	50%{
+		top: 6%;
+		width: 22%;
+	}
+	100%{
+		top: 5%;
+		width: 20%;
+
+		
+	}
+}
 .container_info4 .imagen {
   flex-basis: 35%;
   display: flex;
+ 
 }
 .container_info4 .imagen img {
   width: 95%;
   height: 85%;
- margin-top: 10px;	
+  margin-top: 10px;	
 }
 .modal {
   max-width: 800px;
-  max-height: 500px;
+  max-height: 435px;
+  margin-bottom: 3%;
 }
 
 .blocker{
 	z-index: 15 !important; 
+	height: 104vh;
 }
 .cont {
   width: 100%;
@@ -490,11 +526,11 @@ body{
   width: 50%;
   overflow: hidden;
   height: 470px;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 .artCont {
   width: 50%;
-  padding: 110px 20px;
+  padding: 70px 20px;
 }
 .artCont h2 {
   font-size: 2em;
@@ -503,16 +539,9 @@ body{
   font-family: Century Gothic;
 }
 .artCont p {
-  margin-top: 20px;
+  margin-top: 1px;
   font-size: 1em;
   font-family: Century Gothic;
-}
-.linea1{
-	width: 5px; 
-	height: 95%;
-	background: #04f904;
-	margin-left: 280px;
-	margin-top: 20px;
 }
 
 .cinco{
@@ -629,6 +658,8 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+  justify-content: center;
+  z-index: 10;
  
 }
 
@@ -646,13 +677,6 @@ body{
 	justify-content: space-between;
 }
 
-.linea1{
-	width: 5px; 
-	height: 95%;
-	background: #04f904;
-	margin-left: 280px;
-	margin-top: 20px
-}
 .siete{
 	background: url(..//img/fondo3.jpg);
 	background-repeat: no-repeat;
@@ -668,6 +692,8 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+  justify-content: center;
+  z-index: 10;
 }
 
 .container_info7 .imagen {
@@ -684,13 +710,6 @@ body{
 	justify-content: space-between;
 }
 
-.linea1{
-	width: 5px; 
-	height: 95%;
-	background: #04f904;
-	margin-left: 280px;
-	margin-top: 20px
-}
 .ocho{
 	background: url(..//img/montaña.png);
 	z-index: 10;
@@ -710,6 +729,7 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+  z-index: 10;
 }
 .container_info9 .imagen {
   flex-basis: 35%;
@@ -725,13 +745,6 @@ body{
 	justify-content: space-between;
 }
 
-.linea1{
-	width: 5px; 
-	height: 95%;
-	background: #04f904;
-	margin-left: 280px;
-	margin-top: 20px
-}
 .diez{
 	z-index: 10;
 }
@@ -750,6 +763,8 @@ body{
   margin: auto;
   cursor: pointer;
   margin-top: 10px;
+  justify-content: center;
+  z-index: 10;
 }
 
 .container_info11 .imagen {
@@ -766,13 +781,6 @@ body{
 	justify-content: space-between;
 }
 
-.linea1{
-	width: 5px; 
-	height: 95%;
-	background: #04f904;
-	margin-left: 280px;
-	margin-top: 20px
-}
 .modal a.close-modal{
 	background-image:url(../img/x.png); 
 	background-color:#04f904;

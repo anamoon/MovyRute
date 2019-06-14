@@ -87,7 +87,11 @@
 			var atributo = $(this).attr('href');
 			$('body, html').stop().animate({
 				scrollLeft: $(atributo).offset().left
-			}, 1500, 'easeInOutQuart');
+				
+
+			}, 1500, 'easeInOutQuart', function(){
+				$("body").css('overflow-x','hidden');
+			})
 		});
 
 		
