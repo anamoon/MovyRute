@@ -730,6 +730,7 @@ body{
   cursor: pointer;
   margin-top: 10px;
   z-index: 10;
+  justify-content: center;
 }
 .container_info9 .imagen {
   flex-basis: 35%;
