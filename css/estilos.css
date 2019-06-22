@@ -998,7 +998,21 @@ body{
 	color: #fff;
 	font-size:2em;
 }
-
+.volverNosotros{
+	position: absolute;
+	background: #1B9CFC;
+	border-radius: 5px;
+	width: 80px;
+	height: 40px;
+	right: 0;
+	margin: 10px;
+}
+.volverNosotros a{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: Century Gothic;
+	font-weight: bold;
+}
 /*Contacto*/
 .fondoContacto{
 	background: url(..//img/fondoPagina1.jpg);
