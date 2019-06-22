@@ -964,9 +964,11 @@ body{
 
 /*Creadores*/
 .fondoNosotros{
-	background: #52d8f7;
+	background: url(../img/fondo1.jpg);
 	width: 100%;
 	height: 100vh;
+	background-repeat:no-repeat;
+	background-size: cover;
 }
 .creadores{
 	display: flex;
@@ -974,18 +976,22 @@ body{
 	justify-content: space-between;
 	width: 80%;
 	margin: 0 auto;
+
 }
 .persona{
-	padding-left:15px;
-	padding-right: 15px;
-	margin-top: 20px;
+	padding-right: 35px;
+	margin-top: 60px;
+	z-index: 10;
 }
 .persona h3{
 	text-align: center;
+	font-family: Century Gothic;
 }
 .persona p{
 	text-align: center;
+	font-family: Century Gothic;
 }
+
 .tituloNosotros{
 	font-family: Century Gothic;
 	text-align: center;
