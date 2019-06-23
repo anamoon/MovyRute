@@ -66,96 +66,134 @@ body{
 	width: 80px !important;
 	animation: indica 3s infinite;
 }
-@keyframes indica{
-	100%{
-		width: 90px;
-	}
-	90%{
-		width: 80px;
-	}
-}
+
 .ind1{
 	left: 23%;
 	top: 295px;
 	animation-delay: 3s;
-	animation: indUno 6s infinite;
+	animation: indUno 4s infinite;
 }
 @keyframes indUno{
-	100%{
-		top: 285px;
+	0%{
+		transform: translateY(0px);
 	}
-	90%{
-		top: 295px;
+	
+	50%{
+		transform: translateY(20px);
+	}
+
+	100%{
+		transform: translateY(0px);
 	}
 }
 .ind2{
 	left: 21%;
-	top: 210px;
+	top: 200px;
 	animation-delay: 9s;
-	animation: indDos 12s infinite;
+	animation: indDos 8s infinite;
 }
 @keyframes indDos{
-	100%{
-		top: 200px;
+	0%{
+		transform: translateY(0px);
 	}
-	90%{
-		top: 210px;
+	
+	50%{
+		transform: translateY(10px);
+	}
+
+	100%{
+		transform: translateY(0px);
 	}
 }
 .ind3{
 	left: 17%;
 	top: 214px;
 	animation-delay: 6s;
-	animation: indTres 16s infinite;
+	animation: indTres 6s infinite;
 }
 @keyframes indTres{
-	100%{
-		top: 204px;
+	0%{
+		transform: translateY(0px);
 	}
-	90%{
-		top: 214px;
+	
+	50%{
+		transform: translateY(25px);
+	}
+
+	100%{
+		transform: translateY(0px);
 	}
 }
 .ind4{
 	left: 38%;
 	top: 172px;
 	animation-delay: 11s;
-	animation: indCuatro 14s infinite;
+	animation: indCuatro 6s infinite;
 }
 @keyframes indCuatro{
-	100%{
-		top: 162px;
+	0%{
+		transform: translateY(0px);
 	}
-	90%{
-		top: 172px;
+	
+	50%{
+		transform: translateY(25px);
+	}
+
+	100%{
+		transform: translateY(0px);
 	}
 }
 .ind5{
 	left: 42%;
-	top: 150px;
+	top: 130px;
 	animation-delay: 15s;
-	animation: indCinco 9s infinite;
+	animation: indCinco 4s infinite;
 }
 @keyframes indCinco{
-	100%{
-		top: 140px;
+	0%{
+		transform: translateY(0px);
 	}
-	90%{
-		top: 150px;
+	
+	50%{
+		transform: translateY(20px);
+	}
+
+	100%{
+		transform: translateY(0px);
 	}
 }
 .ind6{
 	left: 39%;
 	top: 134px;
 	animation-delay: 17s;
-	animation: indSeis 4s infinite;
+	animation: indSeis 8s infinite;
 }
 @keyframes indSeis{
-	100%{
-		top: 124px;
+	0%{
+		transform: translateY(0px);
 	}
-	90%{
-		top: 134px;
+	
+	50%{
+		transform: translateY(30px);
+	}
+
+	100%{
+		transform: translateY(0px);
+	}
+}
+
+
+@keyframes indicadores_anim{
+	0%{
+		transform: translateY(0);
+	}
+	
+	50%{
+		transform: translateY(60);
+	}
+
+	100%{
+		transform: translateY(0);
 	}
 }
 .controles{
@@ -163,7 +201,7 @@ body{
 	display: flex;
 	flex-flow: column;
 	right: 0;
-	margin-top: 18%;
+	margin-top: 14%;
 	cursor: pointer;
 }
 .control{
@@ -417,42 +455,71 @@ body{
 }
 .imagenFlorencia{
 	position: absolute;
-	margin-left: 20%;
+	margin-left: 18%;
 	margin-top: 120px;
 	width: 219px;
 	height: 550px;
 	background: url(../img/tiraAnimacion.png);
 	background-position: left top;
-	animation: animarBici ease-in-out 4s infinite;
-	transition-duration: 5s;
+	animation: animarBici steps(6)  0.5s infinite;
+	/*transition-duration: 5s;*/
 }
 @keyframes animarBici{
-	0%{
+	/*0%{
 		transform: rotateY( 0deg );
 	}
 	49%{
 		transform: rotateY( 0deg );
-	}
-	50%{
-		/*background-position: -1300px top;*/
+	}*/
+	/*50%{
+		background-position: -1300px top;
 		margin-left: 70%;
 		transform: rotateY( 180deg );
-	}
-	99%{
+	}*/
+	/*99%{
 		transform: rotateY( 180deg );
-	}
+	}*/
 
 	100%{
-		/*background-position: -1300px top;*/
-		margin-left: 0%;
-		transform: rotateY( 0deg );
+		background-position: -1300px top;
+
+
+		/*margin-left: 0%;
+		transform: rotateY( 0deg );*/
 		
 	}
 	
 
 }
 
+.contenedorimg{
+	animation:animarContenedor linear 7s infinite;
+	transition-duration: 5s;
+	width: 219px;
+	height: 550px;
+}
+@keyframes animarContenedor{
+	
+	45%{
+		transform: rotateY( 0deg );
+	}
 
+	50%{
+		margin-left: 73%;
+		transform: rotateY( 180deg );
+	}
+
+	95%{
+		transform: rotateY( 180deg );
+	}
+
+	100%{
+		margin-left: 2%;
+		
+	}
+	
+
+}
 .container_info4 {
   display: flex;
   flex-flow: wrap;
@@ -796,49 +863,155 @@ body{
 /*REALIDAD AUMENTADA*/
 
 .imagenra{
-	margin: 0 auto;
+	position: absolute;
+	border-radius: 5px;
+	display: flex;
+	margin-top: 20px;
+	margin-left: 1%;
+	z-index: -10;
+
+
+}
+
+.contenedorRA{
 	display: flex;
 
 }
+/*.marcadorFondo{
+	background: url(../img/fondoRA.jpg);
+	width: 100%;
+	height: 50vh;
+}*/
+.ra{
+	margin-top: 32%;
+
+}
+.instrucciones{
+	position: absolute;
+	right: 3%;
+	margin-top: 150px;
+	z-index: -10;
+}
+.instruccionesRA{
+	position: absolute;
+	right: 8%;
+	margin-top: 290px;
+	transform: rotate(-8deg);
+	font-family: Century Gothic;
+	text-align: center;
+}
+.Titulo{
+	right: 11%;
+	margin-top: 210px;
+	font-size: 1.5em;
+}
+
 .volver{
-	background: #04f904;
+	position: absolute;
+	background: #963d02;
 	border-radius: 5px;
 	width: 80px;
 	height: 40px;
-	margin: 25px;
+	right: 18%;
+	margin-top: 28%;
+	transform: rotate(-8deg);
 }
 .volver:hover{
-	background: #08e008;
-}
-.apk{
-	background: #04f904;
-	border-radius: 5px;
-	width:120px;
-	height: 40px;
-	margin-top: 25px;
-	margin-right: 25px;
-}
-.apk:hover{
-	background: #08e008;
-}
-.boton{
-	display: flex;
-	justify-content: flex-end;
+	background: #a55020;
 }
 .volver a{
-	color: #ffff;
+	color: #fff;
 	font-size: 1.2em;
 	font-family: Century Gothic;
+	font-weight: bold;
 }
+.apk{
+	font-weight: bold;
+	font-size: 1.5em;
+	color: #4f1e03;
+	text-shadow:  0 0 5px #fff;
+	animation: apk 1s infinite;
+}
+@keyframes apk{
+	90%{
+		text-shadow:  0 0 5px #fff;
+	}
+	100%{
+		text-shadow:  0 0 15px #fff;
+	}
+}
+
+/*.botones{
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 10%;
+	margin-top: 25px;
+
+}
+
 .apk a{
-	color: #ffff;
+	color: #0652DD;
 	font-size: 1.2em;
 	font-family: Century Gothic;
+	font-weight: bold;
 }
 .parrafoRA{
 	font-family: Century Gothic;
 	text-align: center;
 	margin-bottom: 15px;
+}
+*/
+
+/*Creadores*/
+.fondoNosotros{
+	background: url(../img/fondo1.jpg);
+	width: 100%;
+	height: 100vh;
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.creadores{
+	display: flex;
+	flex-flow:row nowrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+
+}
+.persona{
+	padding-right: 35px;
+	margin-top: 60px;
+	z-index: 10;
+}
+.persona h3{
+	text-align: center;
+	font-family: Century Gothic;
+}
+.persona p{
+	text-align: center;
+	font-family: Century Gothic;
+}
+
+.tituloNosotros{
+	font-family: Century Gothic;
+	text-align: center;
+	color: #fff;
+	font-size:2em;
+}
+.volverNosotros{
+	position: absolute;
+	background: #1B9CFC;
+	border-radius: 5px;
+	width: 80px;
+	height: 40px;
+	right: 0;
+	margin: 10px;
+}
+.volverNosotros a{
+	color: #fff;
+	font-size: 1.2em;
+	font-family: Century Gothic;
+	font-weight: bold;
 }
 /*Contacto*/
 .fondoContacto{
