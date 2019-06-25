@@ -500,7 +500,7 @@ body{
 }
 @keyframes animarContenedor{
 	
-	45%{
+	40%{
 		transform: rotateY( 0deg );
 	}
 
@@ -514,7 +514,7 @@ body{
 	}
 
 	100%{
-		margin-left: 2%;
+		transform: rotateY( 0deg );
 		
 	}
 	
@@ -545,7 +545,7 @@ body{
 	animation: animacionMano 2s ease-in-out;
 	animation-fill-mode: forwards;
 	animation-iteration-count: infinite;
-	margin-left: -90px;
+	margin-left: -120px;
 	width: 20%;
 
 }
