@@ -19,6 +19,7 @@ body{
 	background: #52d8f7;
 	width: 100%;
 	height: 100vh;
+	position: relative;
 }
 .planeta{
 	position: relative;
@@ -217,6 +218,18 @@ body{
 	position: absolute;
 	top: 0;
 	padding: 30px;
+}
+.logoLiga{
+	position: absolute;
+	bottom: 0;
+	padding: 30px;
+	display: block;
+	right: -15%;
+}
+.liga{
+	width: 30%;
+	padding-left: 10px;
+
 }
 .flecha{
 	margin-left: auto;
@@ -889,8 +902,9 @@ body{
 .instrucciones{
 	position: absolute;
 	right: 3%;
-	margin-top: 150px;
+	top: 150px;
 	z-index: -10;
+	width: 40%;
 }
 .instruccionesRA{
 	position: absolute;
@@ -980,7 +994,7 @@ body{
 }
 .persona{
 	padding-right: 35px;
-	margin-top: 60px;
+	margin-top: 40px;
 	z-index: 10;
 }
 .persona h3{
@@ -997,6 +1011,7 @@ body{
 	text-align: center;
 	color: #fff;
 	font-size:2em;
+	padding: 30px;
 }
 .volverNosotros{
 	position: absolute;
@@ -1006,6 +1021,9 @@ body{
 	height: 40px;
 	right: 0;
 	margin: 10px;
+}
+.volverNosotros:hover{
+	background: #70a1ff;
 }
 .volverNosotros a{
 	color: #fff;
